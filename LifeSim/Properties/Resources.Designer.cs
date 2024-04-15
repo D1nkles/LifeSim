@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LifeSim.Properties
+namespace LifeSimWinForms.Properties
 {
 
 

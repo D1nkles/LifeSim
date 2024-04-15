@@ -1,4 +1,4 @@
-﻿namespace LifeSim
+﻿namespace LifeSimWinForms
 {
     partial class Form1
     {

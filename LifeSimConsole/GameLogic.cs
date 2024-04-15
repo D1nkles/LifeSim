@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LifeSimWinForms
+namespace LifeSimConsole
 {
     internal class GameLogic
     {
@@ -63,12 +61,12 @@ namespace LifeSimWinForms
             gameField = newField;
         }
 
-        public bool[,] GetGameField() 
+        public bool[,] GetGameField()
         {
             var currGameField = new bool[columns, rows];
-            for (int y = 0; y < rows; y++) 
+            for (int y = 0; y < rows; y++)
             {
-                for (int x = 0; x < columns; x++) 
+                for (int x = 0; x < columns; x++)
                 {
                     currGameField[x, y] = gameField[x, y];
                 }
@@ -107,14 +105,14 @@ namespace LifeSimWinForms
         {
             return x >= 0 && y >= 0 && x < columns && y < rows;
         }
-        private void UpdateCell(int x, int y, bool state) 
+        private void UpdateCell(int x, int y, bool state)
         {
-            if (ValidateCellPosition(x, y)) 
+            if (ValidateCellPosition(x, y))
             {
                 gameField[x, y] = state;
             }
         }
-        public void AddCell(int x, int y) 
+        public void AddCell(int x, int y)
         {
             UpdateCell(x, y, state: true);
         }
